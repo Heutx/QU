@@ -1,0 +1,13 @@
+{% extends "layouts/base.html" %}
+{% load static %}
+
+{% block title %} Show one Book {% endblock title %}
+
+{% block content %}
+    <a href="{% url 'books.list_books' %}">Go Back</a>
+    <h1>Details of Book 1</h1>
+    <h2>The Kind Little Bird: Kindness Makes the World Bright</h2>
+    <h2>Author: Children's Books</h2>
+    <p><strong>The Kind Little Bird</strong> is a heartwarming tale about a small bird that discovers how simple acts of kindness can spread joy and make the world a much brighter place for everyone.</p>
+    <img src="{% static 'book1.jpg' %}" alt="The Kind Little Bird" width="200" height="200">
+{% endblock content %}
